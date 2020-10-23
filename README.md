@@ -8,11 +8,11 @@ You can find the materials for the course [here](https://cs50.harvard.edu/x)
 
 ### C - weeks 1 to 5
 - [Problem Set 1: C](/pset1)
-  * [hello](/pset1/hello)
+  * [hello](/pset1/hello.c)
   * mario
-    + [less](/pset1/mario/less)
-    + [more](/pset1/mario/more)
-  * [cash](/pset1/cash)
+    + [less](/pset1/mario_less.c)
+    + [more](/pset1/mario_more)
+  * [cash](/pset1/cash.c)
 
 
 ## Academic Honesty
