@@ -4,9 +4,13 @@ You can find the materials for the course [here](https://cs50.harvard.edu/x)
 ## My problem sets solutions - ⚙️ In progress
 
 ### Scratch - week 0
-
+Link to play the game that I created :
+```
+https://scratch.mit.edu/projects/433583706/
+```
 
 ### C - weeks 1 to 5
+> The problems use the cs50 to c library, you can check it [here](https://github.com/cs50/libcs50)
 - [Problem Set 1: C](/pset1)
   * [hello](/pset1/hello.c)
   * mario
@@ -16,5 +20,5 @@ You can find the materials for the course [here](https://cs50.harvard.edu/x)
 
 
 ## Academic Honesty
-> please try to solve the problems before taking a look at any of my solutions. Only then will you have the best use of the course.
+> Please try to solve the problems before taking a look at any of my solutions. Only then will you have the best use of the course.
 <br/>Check the [Academic Honesty](https://cs50.harvard.edu/x/2020/honesty/) policy of the course.
