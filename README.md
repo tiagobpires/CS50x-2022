@@ -10,7 +10,7 @@ https://scratch.mit.edu/projects/433583706/
 ```
 
 ### C - weeks 1 to 5
-> The problems use CS50 Library for C, you can check it [here](https://github.com/cs50/libcs50)
+> The problems use the CS50 Library for C, you can check it [here](https://github.com/cs50/libcs50)
 - [Problem Set 1: C](/pset1)
   * [hello](/pset1/hello.c)
   * mario
