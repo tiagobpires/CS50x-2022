@@ -17,6 +17,7 @@ https://scratch.mit.edu/projects/433583706/
     + [less](/pset1/mario_less.c)
     + [more](/pset1/mario_more)
   * [cash](/pset1/cash.c)
+  * [credit](/pset1/credit.c)
 
 
 ## Academic Honesty
