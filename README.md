@@ -15,10 +15,13 @@ https://scratch.mit.edu/projects/433583706/
   * [hello](/pset1/hello.c)
   * mario
     + [less](/pset1/mario_less.c)
-    + [more](/pset1/mario_more)
+    + [more](/pset1/mario_more.c)
   * [cash](/pset1/cash.c)
   * [credit](/pset1/credit.c)
-
+- [Problem Set 2: Arrays](/pset2)
+  * [readability](/pset2/readability.c)
+  * [caesar](/pset2/caesar.c)
+  * [substitution](/pset2/substitution.c)
 
 ## Academic Honesty
 > Please try to solve the problems before taking a look at any of my solutions. Only then will you have the best use of the course.
