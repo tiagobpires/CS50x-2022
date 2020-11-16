@@ -33,7 +33,7 @@ Change owed: 0.62
 5
 ```
 ## Credit
-> checks if the card is valid, according to Luhn's algorithm, and if it is AMEX, MASTERCARD or VISA
+> Checks if the card is valid, according to Luhn's algorithm, and if it is AMEX, MASTERCARD or VISA
 ```
 Number: 378282246310005
 AMEX
