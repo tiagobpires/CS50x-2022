@@ -22,6 +22,9 @@ https://scratch.mit.edu/projects/433583706/
   * [readability](/pset2/readability.c)
   * [caesar](/pset2/caesar.c)
   * [substitution](/pset2/substitution.c)
+- [Problem Set 3: Algorithms](/pset3)
+  * [plurality](/pset3/plurality.c)
+  * [runoff](/pset3/runoff.c)
 
 ## Academic Honesty
 > Please try to solve the problems before taking a look at any of my solutions. Only then will you have the best use of the course.
