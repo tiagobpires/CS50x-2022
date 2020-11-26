@@ -26,9 +26,10 @@ https://scratch.mit.edu/projects/433583706/
   * [plurality](/pset3/plurality.c)
   * [runoff](/pset3/runoff.c)
 - [Problem Set 4: Memmory](/pset4)
-  * [filter]
+  * filter
     + [less](/pset4/filter_less)
     + [more](/pset4/filter_more)
+  * [recover](/pset4/recover)
 
 ## Academic Honesty
 > Please try to solve the problems before taking a look at any of my solutions. Only then will you have the best use of the course.
