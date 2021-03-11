@@ -22,21 +22,41 @@ https://scratch.mit.edu/projects/433583706/
     + [more](/pset1/mario_more.c)
   * [cash](/pset1/cash.c)
   * [credit](/pset1/credit.c)
-  * [lab - population](/pset1/lab/population.c)
+  * [lab - Population](/pset1/lab/population.c)
 - [Problem Set 2: Arrays](/pset2)
   * [readability](/pset2/readability.c)
   * [caesar](/pset2/caesar.c)
   * [substitution](/pset2/substitution.c)
-  * [lab - scrabble](/pset2/lab/scrabble.c)
+  * [lab - Scrabble](/pset2/lab/scrabble.c)
 - [Problem Set 3: Algorithms](/pset3)
   * [plurality](/pset3/plurality.c)
   * [runoff](/pset3/runoff.c)
-  * [lab - answers](/pset3/lab/answers.txt)
+  * [lab - Answers](/pset3/lab/answers.txt)
 - [Problem Set 4: Memmory](/pset4)
   * filter
     + [less](/pset4/filter_less)
     + [more](/pset4/filter_more)
   * [recover](/pset4/recover)
-  * [lab - volume](/pset4/lab/volume.c)
+  * [lab - Volume](/pset4/lab/volume.c)
 - [Problem Set 5: Data Structures](/pset5)
   * [speller](/pset5/speller.c)
+ 
+### Python - week 6 
+- [Problem Set 6: Python](/pset6)
+  * [hello](/pset6/hello.py)
+  * [mario]
+    + [less](/pset6/mario_less.py)
+    + [more](/pset6/mario_more.py)
+  * [cash](/pset6/cash.py)
+  * [credit](/pset6/credit.py)
+  * [readability](/pset6/readability.py)
+  * [dna](/pset6/dna)
+  * [lab - World Cup](/pset6/lab6)
+ 
+### SQL - week 7
+- [Problem Set 7: SQL](/pset7)
+  * [movies](/pset7/movies)
+  * [fiftyville](/pset7/fiftyville)
+  * [lab - Songs](/pset7/lab7)
+  
+### Web Development- weeks 8 to 10
