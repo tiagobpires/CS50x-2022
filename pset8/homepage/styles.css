@@ -1,0 +1,80 @@
+.navbar-brand:hover {
+    background-color: #494e54;
+  }
+  
+  a {
+    text-decoration: none !important;
+  }
+  
+  
+  
+  /*Index page*/
+  #homeMenu {
+    background-image:url("https://images.unsplash.com/photo-1574364990668-45419652dd4b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80");
+    background-size: cover;
+  }
+  
+  #homeMenuText {
+    background-color: #c6c4ce05;
+  }
+  
+  .card-home {
+    border-radius: 18px;
+    width: 18rem;
+    height: 22rem;
+  }
+  
+  .card-home:hover {
+    transform: scale(1.08);
+  }
+  
+  .img-card-home {
+    width: 250px;
+    height: 250px;
+    margin: 2 auto;
+  }
+  
+  
+  /*Batedeira page*/
+  #cardBatedeira {
+    max-width: 1000px;
+  }
+  
+  .img-Batedeira {
+    width: 280px;
+  }
+  
+  /*Receitas page*/
+  #receitas-salgado {
+    width: 150px;
+    height: 150px;
+    float: left;
+  }
+  
+  #cardTitleReceita {
+    max-width: 800px;
+  }
+  
+  
+  /*Criadores page*/
+  .fab {
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    margin: auto;
+  }
+  
+  .fab:hover {
+    opacity: 0.4;
+  }
+  
+  .card-criadores {
+      border-radius: 18px;
+      width: 15rem;
+      height: 26rem;
+  }
+  
+  .card-criadores:hover {
+    transform: scale(1.05);
+  }
+  
