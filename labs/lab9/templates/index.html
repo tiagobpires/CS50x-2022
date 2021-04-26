@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="/static/styles.css" rel="stylesheet">
+        <title>Birthdays</title>
+    </head>
+    <body>
+        <div class="jumbotron">
+            <h1>Birthdays</h1>
+        </div>
+        <div class="container">
+            <div class="section">
+
+                <h2>Add a Birthday</h2>
+                <!-- TODO: Create a form for users to submit a name, a month, and a day -->
+                <form action="/" method="post">
+                    <input autocomplete="off" name="name" placeholder="Name" type="text">
+                    <input autocomplete="off" name="month" placeholder="Month" type="number" min="1" max="12">
+                    <input autocomplete="off" name="day" placeholder="Day" type="number" min="1" max="31">
+                    <input type="submit" value="Add Birthday">
+                </form>
+            </div>
+
+            <div class="section">
+
+                <h2>All Birthdays</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Birthday</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- TODO: Loop through the database entries to display them in this table -->
+                        {% for birthday in birthdays %}
+                            <tr id="row_{{ birthday.id }}">
+                                <td id="name_{{ birthday.id }}">{{ birthday.name }}</td>
+                                <td id="date_{{ birthday.id }}">{{ birthday.month }}/{{ birthday.day }}</td>
+                                <td class="td_edit_delete">
+                                    <!-- Edit and Delete data -->
+                                    <input type="submit" value="Edit" onClick="editRow({{ birthday.id }})">
+
+                                    <form action="/delete" method="post" class="delete_row">
+                                        <input type="hidden" name="id" value="{{ birthday.id }}">
+                                        <input type="submit" value="Delete">
+                                    </form>
+                                </td>
+                            </tr>
+
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </body>
+
+    <script>
+        function editRow(id) {
+            let name = document.querySelector("#name_" + id).innerHTML;
+            let date = document.querySelector("#date_" + id).innerHTML;
+            date.toString();
+            date.toString();
+
+            let month = parseInt(date);
+
+            let day = date.slice(-2);
+            day.replace("/", "");
+            parseInt(day);
+
+            document.querySelector("#row_" + id).innerHTML =
+            `
+            <td colspan="3">
+                <form action="/edit" method="post" class="edit-form">
+
+                            <input class="edit-name" autocomplete="off" name="name" value="${name}" type="text" style="width: 180px">
+
+                            <input autocomplete="off" name="month" value="${month}" type="number" style="width: 100px">
+                            /
+                            <input autocomplete="off" name="day" value="${day}" type="number" style="width: 100px">
+
+                            <input type="hidden" name="id" value="${id}">
+                            <input class="edit-confirm" type="submit" value="Confirm">
+
+                </form>
+            </td>
+            `;
+
+        }
+    </script>
+
+</html>
