@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Trivia!</title>
+
+        <script>
+
+            // Changes background color of wrong buttons to red
+            function wrongAnswer (button) {
+                button.addEventListener('click', function() {
+                    button.style.backgroundColor = 'red';
+                    document.querySelector('#feedback1').innerHTML = 'Incorrect!';
+                });
+            }
+
+            // Change button to initial color
+            function restart (button) {
+                button.style.background = '#d9edff';
+            }
+
+            document.addEventListener('DOMContentLoaded', function() {
+
+                // Check Multiple Choice
+                let correct = document.querySelector('.correct');
+                correct.addEventListener('click', function(){
+                    correct.style.backgroundColor = 'green';
+                    document.querySelector('#feedback1').innerHTML = 'Correct!';
+                });
+
+                let wrongs = document.querySelectorAll('.wrong');
+                wrongs.forEach(wrongAnswer);
+
+                // Check Free Response
+                document.querySelector('#check').addEventListener('click', function() {
+                    let input = document.querySelector('#answer');
+                    let answer = input.value.toLowerCase().trim();
+                    if (answer == 'david' || answer == 'david malan' || answer == 'david j. malan') {
+                        document.querySelector('#feedback2').innerHTML = 'Correct!';
+                        input.style.backgroundColor = 'green';
+                    } else {
+                        document.querySelector('#feedback2').innerHTML = 'Incorrect!';
+                        input.style.backgroundColor = 'red';
+                    }
+                });
+
+                // Restart buttons and input
+                document.querySelector('#restart').addEventListener('click', function() {
+                    restart(correct);
+                    wrongs.forEach(restart);
+                    document.querySelector('#answer').style.backgroundColor = 'white';
+                    document.querySelector('#answer').value = '';
+                    document.querySelector('#feedback1').innerHTML = '';
+                    document.querySelector('#feedback2').innerHTML = '';
+                });
+
+            });
+
+        </script>
+
+    </head>
+    <body>
+
+        <div class="jumbotron">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+
+            <div class="section">
+                <h2>Part 1: Multiple Choice </h2>
+                <hr>
+
+                <h3>Since what year is CS50 part of Yale University?</h3>
+
+                <button class="wrong"> 1999 </button>
+                <button class="correct"> 2015 </button>
+                <button class="wrong"> 2010 </button>
+                <button class="wrong"> 2018 </button>
+
+                <p id="feedback1"></p>
+            </div>
+
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <hr>
+
+                <h3>What's the name of CS50's teacher?</h3>
+
+                <input type="text" id="answer" placeholder="Your Answer Here"></input>
+                <button type="submit" id="check">Check Answer</button>
+
+                <p id="feedback2"></p>
+
+            </div>
+
+            <div class="section">
+                <button id="restart">Restart</button>
+            </div>
+
+        </div>
+    </body>
+</html>

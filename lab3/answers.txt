@@ -1,0 +1,15 @@
+sort1 uses: bubble sort 
+
+How do you know?: 
+sort1 does better than sort3 when the numbers are already sorted, this happens with the bubble sort, as it will change the seat numbers only if they are in the wrong order
+
+sort2 uses: merge sortbubble sort 
+
+How do you know?: 
+sort2 compiles, on random values, in the shortest time of 3. In general cases, comparing the big O notation would be n log n, while the others would be n ^ 2
+
+
+sort3 uses:  selection sort
+
+How do you know?:  
+sort3 takes longer than sort1 to check numbers already sorted, this is because it will scroll through the list until it finds the smallest number, giving n ^ 2 in big O notation and omega notation
