@@ -1,0 +1,20 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Quoted
+{% endblock %}
+
+{% block main %}
+
+    <div class="shadow-sm p-3  d-inline-block">
+        <p class="my-1">
+            A share of {{ stock.name }} ({{ stock.symbol }}) costs {{ stock.price | usd }}
+        </p>
+
+    </div>
+
+    <form action="/quote" method="get">
+        <button class="btn btn-primary mt-5" type="submit">Quote another stock</button>
+    </form>
+
+{% endblock %}

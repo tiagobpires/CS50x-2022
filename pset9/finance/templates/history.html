@@ -1,0 +1,41 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Index
+{% endblock %}
+
+{% block main %}
+
+    <table class="table table-striped text-left">
+        <thead>
+            <tr>
+                <th>Symbol</th>
+                <th>Shares</th>
+                <th>Price</th>
+                <th>Action</th>
+                <th>Transacted</th>
+                <th>TOTAL</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for stock in stocks %}
+
+                <tr>
+                    <td>{{ stock.symbol }}</td>
+                    <td>{{ stock.shares }}</td>
+                    <td>{{ stock.price | usd }}</td>
+                    <td>{{ stock.action.upper() }}</td>
+                    <td>{{ stock.timestamp }}</td>
+                    {% if '+' in stock.total %}
+                        <td class="text-success">{{ stock.total }}</td>
+                    {% else %}
+                        <td class="text-danger">{{ stock.total }}</td>
+                    {% endif %}
+                </tr>
+
+            {% endfor %}
+
+        </tbody>
+    </table>
+
+{% endblock %}

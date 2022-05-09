@@ -1,0 +1,81 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Portfolio
+{% endblock %}
+
+{% block main %}
+
+    <table class="table table-striped text-left">
+        <thead>
+            <tr>
+                <th>Symbol</th>
+                <th>Name</th>
+                <th>Shares</th>
+                <th>Price</th>
+                <th>TOTAL</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for stock in stocks %}
+
+                <tr>
+                    <td>{{ stock.symbol }}</td>
+                    <td>{{ stock.name }}</td>
+                    <td>{{ stock.shares }}</td>
+                    <td>{{ stock.price | usd }}</td>
+                    <td>{{ stock.total | usd }}</td>
+                    <td class="td-btn-portfolio text-center">
+                        <form class="d-inline-block" action="/buy" method="post">
+                            <input name="symbol" type="hidden" value="{{ stock.symbol }}"></input>
+                            <input name="shares" type="hidden" value="1"></input>
+                            <button class="btn btn-primary btn-portfolio mb-1 my-md-0">Buy</button>
+                        </form>
+
+                        <form class="d-inline-block" action="/sell" method="post">
+                            <input name="symbol" type="hidden" value="{{ stock.symbol }}"></input>
+                            <input name="shares" type="hidden" value="1"></input>
+                            <button class="btn btn-primary btn-portfolio mb-1 my-md-0">Sell</button>
+                        </form>
+
+                    </td>
+                </tr>
+
+            {% endfor %}
+
+            <tr>
+                <td colspan="4">CASH</td>
+                <td>{{ cash | usd }}</td>
+                <td class="td-btn-portfolio text-center">
+                    <button class="btn btn-primary btn-portfolio" id="btn-add-cash">Add/Remove</button>
+                </td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="4"></td>
+                <td>{{ total | usd }}</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <div id="form-cash"></div>
+
+
+
+{% endblock %}
+
+{% block script %}
+    <script>
+        document.querySelector("#btn-add-cash").addEventListener("click", function(){
+            document.querySelector('#form-cash').innerHTML = `
+            <form action="/changecash" method="post" class="d-inline-block my-3 p-2 shadow"s>
+                <label class="d-block" for="amount">For remove cash, add <span class="text-primary">-</span> before amount</label>
+                <input class="form-control" name="amount" placeholder="Amount $" type="number" step="10" required>
+                <button class="btn btn-primary" type="submit">Add/Remove</button>
+            </form>
+            `;
+        });
+    </script>
+{% endblock %}

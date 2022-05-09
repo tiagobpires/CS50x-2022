@@ -1,5 +1,15 @@
-# CS50x 2021 - Harvard Introduction to computer science 
-You can find the materials for the course [here](https://cs50.harvard.edu/x)
+# CS50x 2022 - Harvard Introduction to computer science 
+
+CS50x is a Harvard University's introduction to the intellectual enterprises of computer science and the art of programming for majors and non-majors alike, with or without prior programming experience.
+
+You can find the materials and more about the course [here](https://cs50.harvard.edu/x).
+
+I created this repository to save all my solutions for the problems proposed on the course. Every exercise scored 100% on submission!
+
+> Quick word! If you're considering taking this course, I highly recommend you to do it. It's an amazing course and you'll not regret it :rocket:
+
+Feel free to contact me to discuss any of the solutions, or just talk :)
+<img align="center" src="https://img.shields.io/badge/get%20in%20touch!-0077B5?style=flat&logo=linkedin&logoColor=white" alt="LinkedIn Badge" height="25" style="max-width: 100%;">
 
 ## Academic Honesty
 > Please try to solve the problems before taking a look at any of my solutions. Only then will you have the best use of the course.
@@ -66,3 +76,15 @@ https://scratch.mit.edu/projects/433583706/
   * [lab - Trivia](/labs/lab8)
 - [Problem Set 8: Flask](/pset9)
   * [lab - Birthdays](/labs/lab9)
+- Final Project: Readme Creator
+  
+  Readme Creator is a website to create outstanding README's for your profile and projects easily. You can check it [here](https://readmecreator.herokuapp.com/).
+
+  All the code is under MIT license, avaiable [here](https://github.com/tiagobpires/readme-creator). Feel free to contribute :D!
+
+
+## CS50 Certificate
+
+![Final Certificate](certificate.png)
+
+That was CS50! A big thanks to David Malan and all staff!

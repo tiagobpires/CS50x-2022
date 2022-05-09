@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Greet
+{% endblock %}
+
+{% block main %}
+
+    <h2>Hello {{ username }} &#128516;</h2>
+    <h5 class="my-2">Please fill out how much cash you want to add in your account</h5>
+
+    <div class="mt-4 mb-2">
+        <form action="/greet" method="post">
+            <div class="form-group">
+                <input class="form-control" name="cash" placeholder="Cash $" min="0" type="number" required>
+            </div>
+            <button class="btn btn-primary" type="submit">Add</button>
+        </form>
+    </div>
+
+{% endblock %}
